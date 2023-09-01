@@ -1,8 +1,8 @@
-GET http://localhost:3000/ds
+GET http://localhost:3030/catalogue
 
 ###
 
-PUT http://localhost:3000/ds/data
+PUT http://localhost:3030/catalogue/data
 Content-Type: application/rdf+xml
 
 < ./public-data-lu.rdf
