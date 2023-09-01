@@ -142,3 +142,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,macos,maven,java,visualstudiocode
 
 docker/databases
+application-dev.yaml
