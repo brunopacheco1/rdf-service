@@ -1,0 +1,8 @@
+GET http://localhost:3000/ds
+
+###
+
+PUT http://localhost:3000/ds/data
+Content-Type: application/rdf+xml
+
+< ./public-data-lu.rdf
