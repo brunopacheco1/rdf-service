@@ -5,10 +5,10 @@ import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/api/v1")
+@RestController
 public class UserController {
 
-    @GetMapping("/user-name")
+    @GetMapping("/api/v1/user-name")
     public String name(@AuthenticationPrincipal OidcUser principal) {
         return principal.getName();
     }
