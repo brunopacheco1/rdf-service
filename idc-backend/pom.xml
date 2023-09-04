@@ -15,6 +15,7 @@
     <description>rdf-service</description>
     <properties>
         <java.version>17</java.version>
+        <apache-jena.version>4.9.0</apache-jena.version>
     </properties>
     <dependencies>
         <dependency>
@@ -36,6 +37,13 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-oauth2-resource-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.jena</groupId>
+            <artifactId>apache-jena-libs</artifactId>
+            <type>pom</type>
+            <version>${apache-jena.version}</version>
         </dependency>
 
         <dependency>

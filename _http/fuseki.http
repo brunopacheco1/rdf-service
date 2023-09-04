@@ -6,3 +6,10 @@ PUT http://localhost:3030/catalogue/data
 Content-Type: application/rdf+xml
 
 < ./public-data-lu.rdf
+
+###
+
+POST http://localhost:3030/catalogue/query
+Content-Type: application/x-www-form-urlencoded
+
+query=SELECT * {?s ?p ?o}
