@@ -1,18 +1,9 @@
 spring:
   profiles:
     active: dev
-
-spring:
   security:
     oauth2:
-      client:
-        registration:
-          okta:
-            clientId: 0oab2pq14hYQQdsAF5d7
-            scope:
-              - openid
-            authorizationGrantType: client_credentials
-            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
-        provider:
-          okta:
-            issuer-uri: https://dev-57878581.okta.com/oauth2/default
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-57878581.okta.com/oauth2/default
+          jwk-set-uri: https://dev-57878581.okta.com/oauth2/default/v1/keys
