@@ -22,8 +22,8 @@ export class AppComponent {
             .subscribe((loginResponse: LoginResponse) => {
                 const { isAuthenticated, userData, accessToken, idToken, configId } =
                     loginResponse;
-                    this.isAuthenticated = isAuthenticated;
-                    this.userData = userData;
+                this.isAuthenticated = isAuthenticated;
+                this.userData = userData;
                 /*...*/
             });
     }

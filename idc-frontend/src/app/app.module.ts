@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthConfigModule } from './auth/auth-config.module';
+import { AuthConfigModule } from './auth-config.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
     declarations: [
@@ -20,6 +20,7 @@ import { MatButtonModule } from '@angular/material/button';
         BrowserAnimationsModule,
         MatIconModule,
         MatButtonModule,
+        MatToolbarModule,
     ],
     providers: [],
     bootstrap: [AppComponent]

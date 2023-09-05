@@ -1,13 +1,15 @@
-<button mat-fab extended (click)="login()" [hidden]="isAuthenticated">
-    <mat-icon>home</mat-icon>
-    login
-</button>
+<mat-toolbar>
+    <span>{{ title }}</span>
+    <span class="main-menu-spacer"></span>
+    <button mat-icon-button (click)="login()" [hidden]="isAuthenticated">
+        <mat-icon>login</mat-icon>
+    </button>
 
-<button mat-fab extended (click)="logout()" [hidden]="!isAuthenticated">
-    <mat-icon>home</mat-icon>
-    logout
-</button>
+    <span>{{ userName() }}</span>
+    <button mat-icon-button (click)="logout()" [hidden]="!isAuthenticated">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
 
-{{ userName() }}
 
 <router-outlet></router-outlet>
