@@ -1,8 +1,8 @@
 package io.github.brunopacheco1.rdfservice.dto;
 
-import java.util.List;
+import java.util.Set;
 
 public record Facet(
         String name,
-        List<String> values) {
+        Set<String> values) {
 }
