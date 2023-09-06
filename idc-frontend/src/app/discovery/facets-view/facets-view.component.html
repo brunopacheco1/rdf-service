@@ -1,1 +1,8 @@
-<p>facets-view works!</p>
+<div class="select-fields-container">
+    <mat-form-field *ngFor="let facet of facets">
+        <mat-select required>
+            <mat-option *ngFor="let option of facet.values" [value]="option">{{ option }}</mat-option>
+        </mat-select>
+        <mat-label>{{ facet?.name }}</mat-label>
+    </mat-form-field>
+</div>

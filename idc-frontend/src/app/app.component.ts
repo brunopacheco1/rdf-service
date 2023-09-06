@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
 
 @Component({
@@ -6,13 +6,11 @@ import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
     title = 'idc-frontend';
-
     isAuthenticated: boolean = false;
     userData: any;
-
 
     constructor(private oidcSecurityService: OidcSecurityService) { }
 

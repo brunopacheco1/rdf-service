@@ -12,14 +12,13 @@ export class FacetsViewComponent implements OnInit, OnDestroy {
 
     private facetsSubscription = Subscription.EMPTY;
 
-    private facets: Facet[] = [];
+    facets: Facet[] = [];
 
     public constructor(private facetService: FacetService) { }
 
     ngOnInit(): void {
         this.facetsSubscription = this.facetService.getFacets().subscribe(facets => {
             this.facets = facets;
-            console.log(facets);
         });
     }
 
