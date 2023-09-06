@@ -5,8 +5,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: https://dev-57878581.okta.com/oauth2/default
-          jwk-set-uri: https://dev-57878581.okta.com/oauth2/default/v1/keys
+          issuer-uri: https://dev-57878581.okta.com
+          jwk-set-uri: https://dev-57878581.okta.com/oauth2/v1/keys
 
 sparql-engine:
   url: http://localhost:3030/catalogue/query

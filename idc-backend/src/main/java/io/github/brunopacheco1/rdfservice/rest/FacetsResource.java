@@ -17,9 +17,6 @@ public class FacetsResource {
     private static final String LICENSE_QUERY = "PREFIX dct: <http://purl.org/dc/terms/>\n" +
             "select distinct ?license where { ?s dct:license ?license }";
 
-    private static final String THEME_QUERY = "PREFIX dcat: <http://www.w3.org/ns/dcat#>\n" +
-            "select distinct ?mediaType where { ?s dcat:mediaType ?mediaType }";
-
     private String sparqlEngineUrl;
 
     public FacetsResource(
@@ -33,9 +30,7 @@ public class FacetsResource {
 
         try (var connection = builder.build()) {
             return List.of(
-                    getFacet(connection, "license", LICENSE_QUERY),
-                    getFacet(connection, "mediaType", THEME_QUERY)//
-            );
+                    getFacet(connection, "license", LICENSE_QUERY));
         }
     }
 
