@@ -14,17 +14,15 @@ export class AppComponent {
     userData: any;
 
 
-    constructor(public oidcSecurityService: OidcSecurityService) { }
+    constructor(private oidcSecurityService: OidcSecurityService) { }
 
     ngOnInit() {
         this.oidcSecurityService
             .checkAuth()
             .subscribe((loginResponse: LoginResponse) => {
-                const { isAuthenticated, userData, accessToken, idToken, configId } =
-                    loginResponse;
+                const { isAuthenticated, userData } = loginResponse;
                 this.isAuthenticated = isAuthenticated;
                 this.userData = userData;
-                /*...*/
             });
     }
 

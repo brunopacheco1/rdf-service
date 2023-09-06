@@ -8,10 +8,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+
+import { FacetsViewComponent } from './discovery/facets-view/facets-view.component';
+import { SearchViewComponent } from './discovery/search-view/search-view.component';
+import { DatasetsViewComponent } from './discovery/datasets-view/datasets-view.component';
+import { FacetViewComponent } from './discovery/facet-view/facet-view.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        SearchViewComponent,
+        DatasetsViewComponent,
+        FacetsViewComponent,
+        FacetViewComponent,
     ],
     imports: [
         BrowserModule,
@@ -21,8 +31,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
         MatIconModule,
         MatButtonModule,
         MatToolbarModule,
+        HttpClientModule,
     ],
-    providers: [],
+    providers: [
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
