@@ -15,7 +15,8 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests(it -> it.requestMatchers(new AntPathRequestMatcher("/actuator/**")).permitAll())
+        http
+                .authorizeHttpRequests(it -> it.requestMatchers(new AntPathRequestMatcher("/public/**")).permitAll())
                 .authorizeHttpRequests(it -> it.anyRequest().authenticated())
                 .sessionManagement(it -> it.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .oauth2ResourceServer(it -> it.jwt(Customizer.withDefaults()));

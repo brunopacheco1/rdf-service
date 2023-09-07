@@ -2,7 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { OidcSecurityService } from 'angular-auth-oidc-client';
 import { Observable, map, mergeMap, tap } from 'rxjs';
-import { Facet } from 'src/app/domain/facet';
+import { Facet } from 'src/app/dto/facet';
 
 @Injectable({
     providedIn: 'root'

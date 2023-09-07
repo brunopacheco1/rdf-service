@@ -1,0 +1,5 @@
+GET http://localhost:8080/public/api/v1/facets
+
+###
+
+GET http://localhost:8080/public/api/v1/facets/license

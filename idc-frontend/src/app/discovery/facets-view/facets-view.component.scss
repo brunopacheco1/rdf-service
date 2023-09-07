@@ -1,6 +1,6 @@
 .select-fields-container {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
   }
   
 .select-fields-container mat-form-field {

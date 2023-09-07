@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FacetService } from '../services/facet.service';
 import { Subscription } from 'rxjs';
-import { Facet } from 'src/app/domain/facet';
+import { Facet } from 'src/app/dto/facet';
 
 @Component({
     selector: 'app-facets-view',

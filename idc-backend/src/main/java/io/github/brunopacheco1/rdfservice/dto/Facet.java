@@ -4,5 +4,5 @@ import java.util.Set;
 
 public record Facet(
         String name,
-        Set<String> values) {
+        Set<KeyValue> options) {
 }
