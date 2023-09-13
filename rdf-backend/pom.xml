@@ -8,9 +8,9 @@
         <artifactId>rdf-service-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>idc-backend</artifactId>
+    <artifactId>rdf-backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>idc-backend</name>
+    <name>rdf-backend</name>
     <url>https://github.com/brunopacheco1/rdf-service</url>
     <description>rdf-service</description>
     <properties>

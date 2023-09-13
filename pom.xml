@@ -20,6 +20,6 @@
         <java.version>17</java.version>
     </properties>
     <modules>
-        <module>idc-backend</module>
+        <module>rdf-backend</module>
     </modules>
 </project>

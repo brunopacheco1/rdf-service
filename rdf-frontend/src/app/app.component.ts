@@ -8,7 +8,7 @@ import { LoginResponse, OidcSecurityService } from 'angular-auth-oidc-client';
 })
 export class AppComponent implements OnInit {
 
-    title = 'idc-frontend';
+    title = 'rdf-frontend';
     isAuthenticated: boolean = false;
     userData: any;
 

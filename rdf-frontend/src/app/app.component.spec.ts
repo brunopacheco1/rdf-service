@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'idc-frontend'`, () => {
+  it(`should have as title 'rdf-frontend'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('idc-frontend');
+    expect(app.title).toEqual('rdf-frontend');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('idc-frontend app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('rdf-frontend app is running!');
   });
 });
