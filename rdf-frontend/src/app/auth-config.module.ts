@@ -7,7 +7,7 @@ import { AuthModule } from 'angular-auth-oidc-client';
         HttpClientModule,
         AuthModule.forRoot({
             config: {
-                authority: 'https://dev-57878581.okta.com/',
+                authority: 'https://dev-57878581.okta.com/oauth2/default',
                 redirectUrl: window.location.origin,
                 postLogoutRedirectUri: window.location.origin,
                 clientId: '0oab3hsuxkIQfGLw05d7',

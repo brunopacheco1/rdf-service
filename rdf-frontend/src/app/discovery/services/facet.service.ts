@@ -12,7 +12,7 @@ export class FacetService {
     constructor(private httpClient: HttpClient, private oidcSecurityService: OidcSecurityService) { }
 
     public getFacets(): Observable<Facet[]> {
-        return this.oidcSecurityService.getIdToken()
+        return this.oidcSecurityService.getAccessToken()
             .pipe(mergeMap(token => {
                 let headers = new HttpHeaders();
                 headers = headers.append('Authorization', `Bearer ${token}`);
