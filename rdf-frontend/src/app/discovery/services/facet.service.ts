@@ -16,7 +16,7 @@ export class FacetService {
             .pipe(mergeMap(token => {
                 let headers = new HttpHeaders();
                 headers = headers.append('Authorization', `Bearer ${token}`);
-                return this.httpClient.get<Facet[]>('/api/v1/facets', { headers });
+                return this.httpClient.get<Facet[]>('/public/api/v1/facets', { headers });
             }));
     }
 }
